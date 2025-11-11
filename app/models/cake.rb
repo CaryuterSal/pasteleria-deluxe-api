@@ -1,40 +1,39 @@
 class Cake < ApplicationRecord
   enum sabor: {
-    vainilla: 0,
+    vanilla: 0,
     chocolate: 1,
-    fresa: 2,
+    carrot: 2,
     red_velvet: 3
   }, _prefix: true
 
   enum glaseado: {
-    crema: 0,
-    chocolate: 1,
-    mantequilla: 2
+    chocolate: 0,
+    vanilla: 1,
+    strawberry: 2,
+    cream: 3
   }, _prefix: true
 
   enum topping: {
-    chispas: 0,
-    fruta: 1,
-    nuez: 2,
-    ninguno: 3
+    sprinkles: 0,
+    strawberries: 1,
+    cookies: 2
   }, _prefix: true
 
   enum relleno: {
-    mermelada: 0,
-    crema: 1,
-    nutella: 2,
-    ninguno: 3
+    chocolate: 0,
+    pastry_cream: 1,
+    strawberry_jam: 2
   }, _prefix: true
 
   enum tamanio: {
-    chico: 0,
-    mediano: 1,
-    grande: 2
+    small: 0,
+    medium: 1,
+    large: 2
   }, _prefix: true
 
   enum forma: {
-    redondo: 0,
-    cuadrado: 1,
-    corazon: 2
+    square: 0,
+    round: 1,
+    heart: 2
   }, _prefix: true
 end

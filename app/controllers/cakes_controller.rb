@@ -46,6 +46,9 @@ class CakesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def cake_params
-      params.require(:cake).permit(:sabor, :glaseado, :topping, :relleno, :tamanio, :forma)
+      params
+        .require(:cake)
+        .permit(:sabor, :glaseado, :topping, :relleno, :tamanio, :forma)
+        .transform_values { |v| v.to_s.downcase.strip }
     end
 end
