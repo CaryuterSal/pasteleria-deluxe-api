@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sabor: 1
+  glaseado: 1
+  topping: 1
+  relleno: 1
+  tamanio: 1
+  forma: 1
+
+two:
+  sabor: 1
+  glaseado: 1
+  topping: 1
+  relleno: 1
+  tamanio: 1
+  forma: 1
